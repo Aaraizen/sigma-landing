@@ -391,6 +391,9 @@ a {
     #span-holder{
         display: block;
     }
+    #desc-intro{
+        overflow: auto;
+    }
     #words{
         display:none;
     } 
