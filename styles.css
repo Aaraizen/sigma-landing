@@ -8,7 +8,7 @@ body{
     background-image: url('https://wallpaperaccess.com/full/4641417.jpg');
     margin: 0;
 }
-.navbar{
+.navbar, .navbar1{
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
@@ -19,7 +19,7 @@ body{
     position: sticky;
     overflow: visible;
 }
-#sub-navbar{
+#sub-navbar, #sub-navbar1{
     display: none;
     flex-direction: row;
     justify-content: flex-end;
@@ -42,7 +42,7 @@ body{
     width: 20vw;
     margin-right: 3vw;
 }
-.ham-container > #span-holder {
+.ham-container > #span-holder, .ham-container1 > #span-holder1{
     margin-top: 15px;
 }
 #words{
@@ -54,6 +54,7 @@ body{
     width: 20vw;
     margin-right: 2vw;
     cursor: pointer;
+    margin-top: -4vh;
 
 }
 #sub-words{
@@ -66,7 +67,7 @@ body{
     margin-right: 4vw;
     cursor: pointer;
 }
-#span-holder{
+#span-holder1{
     display: none;
 }
 span{
@@ -388,16 +389,19 @@ a {
    color: rgb(137, 248, 137);
 }
 @media only screen and (max-width: 500px) {
-    #span-holder{
+    #span-holder, #span-holder1{
         display: block;
     }
     #desc-intro{
         overflow: auto;
     }
-    #words{
+    #sub-navbar1{
+        display: none;
+    }
+    #words, #sub-words{
         display:none;
     } 
-    #words.show{
+    #words.show, #sub-words.show{
         display: block;
     }
     span{
